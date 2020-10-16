@@ -1,0 +1,7 @@
+
+# Crud
+crud/node_modules
+crud/build
+crud/npm-debug.log
+crud/.env
+crud/.DS_Store
