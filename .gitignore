@@ -1,7 +1,5 @@
-
-# Crud
-crud/node_modules
-crud/build
-crud/npm-debug.log
-crud/.env
-crud/.DS_Store
+nodejs/*/node_modules
+nodejs/*/build
+nodejs/*/npm-debug.log
+nodejs/*/.env
+nodejs/*/.DS_Store
