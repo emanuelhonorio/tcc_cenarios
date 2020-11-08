@@ -13,7 +13,10 @@ public class FibResource {
 
 	@GetMapping
 	public String fib(@RequestParam long n) {
-		BigInteger a = new BigInteger("0"), b = new BigInteger("1"), f = new BigInteger("1");
+		BigInteger
+			a = new BigInteger("0"),
+			b = new BigInteger("1"),
+			f = new BigInteger("1");
 
 		for (long i = 2; i <= n; i++) {
 			f = a.add(b);

@@ -13,25 +13,13 @@ import com.tcc.crud.repository.ProdutoRepository;
 @RestController
 @RequestMapping("/produtos")
 public class ProdutoResource {
-	
+
 	@Autowired
 	private ProdutoRepository produtoRepository;
-	
+
 	@GetMapping
 	public Iterable<Produto> listProdutos() {
 		return produtoRepository.findAll();
 	}
-	
-	
-	@PostMapping
-	public Produto createProduto() {
-		String nome = "produto_" + System.currentTimeMillis();
-		Produto produto = produtoRepository.save(new Produto(nome, 50D, "descricao...", new Categoria(1L)));
-		return produto;
-	}
-	
-	
-	
-	
 
 }
